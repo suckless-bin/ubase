@@ -15,7 +15,7 @@ RANLIB = ranlib
 # -lrt might be needed on some systems
 CFLAGS = -std=c99 -static -Os -fPIE -pipe -Wextra -Wall
 LDFLAGS = -s -static -static-pie
-LDLIBS   = -lcrypt
+#LDLIBS   = -lcrypt
 
 
 
