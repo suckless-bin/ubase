@@ -37,16 +37,13 @@ LIBUTILSRC = \
 LIB = $(LIBUTIL)
 
 BIN = \
-	blkdiscard        \
 	chvt              \
 	clear             \
 	ctrlaltdel        \
 	df                \
 	dmesg             \
-	eject             \
 	fallocate         \
 	free              \
-	freeramdisk       \
 	fsfreeze          \
 	getty             \
 	halt              \
@@ -95,7 +92,6 @@ MAN1 = \
 	clear.1             \
 	df.1                \
 	dmesg.1             \
-	eject.1             \
 	fallocate.1         \
 	free.1              \
 	id.1                \
@@ -119,7 +115,6 @@ MAN1 = \
 
 MAN8 = \
 	ctrlaltdel.8        \
-	freeramdisk.8       \
 	fsfreeze.8          \
 	getty.8             \
 	halt.8              \
