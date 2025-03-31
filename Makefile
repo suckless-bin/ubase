@@ -59,6 +59,7 @@ BIN = \
 	pivot_root        \
 	ps                \
 	respawn           \
+        stty              \
 	su                \
 	switch_root       \
 	sysctl            \
