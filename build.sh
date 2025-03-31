@@ -1,5 +1,5 @@
 sudo apt install musl-tools -y
-repo=sinit
+repo=ubase
 echo $repo > repo
 git clone --depth=1 https://git.suckless.org/$repo/
 cp config.mk  $repo/
