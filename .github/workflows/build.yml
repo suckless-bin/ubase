@@ -11,14 +11,12 @@ jobs:
             bash build.sh
             repo=$(cat repo)
             echo "tag=$repo" >> $GITHUB_ENV
-            echo "FILE1=$(realpath $repo/$repo-1.1.tar.gz)" >> $GITHUB_ENV
-            echo "FILE2=$(realpath $repo/$repo-static.tar.gz)" >> $GITHUB_ENV
+            echo "FILE1=$(realpath $repo/$repo-static.tar.gz)" >> $GITHUB_ENV
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.tag }}
           files: |
             ${{ env.FILE1 }}
-            ${{ env.FILE2 }}
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
