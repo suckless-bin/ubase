@@ -1,26 +1,12 @@
-sinit - suckless init
-=====================
+# ubase - suckless Linux base utils
 
-sinit is a simple init. It was initially based on  
-Rich Felker's minimal init[1].  
+ubase is a collection of tools similar in spirit to util-linux but much simpler.
 
-Why?
-----
+The complement of ubase is [sbase](http://git.suckless.org/sbase/), which mostly follows POSIX and provides all the portable tools. Together they are intended to form a base system similar to BusyBox but much smaller and suckless.
 
-I wanted to get rid of Busybox init on my toy distro[2].  
+## Building
 
-How?
-----
+To build ubase, simply type:
 
-There are 3 signals that sinit will act on.  
-
-      SIGUSR1: powers off the machine.  
-      SIGINT:  reboots the machine (or alternatively via ctrl-alt-del).  
-      SIGCHLD: reap children  
-
-To see how sinit integrates with the init scripts, then have  
-a look at [3].  
-
-[1] https://gist.github.com/rofl0r/6168719  
-[2] http://git.2f30.org/morpheus/  
-[3] http://git.2f30.org/ports/tree/fs/  
+```sh
+make
