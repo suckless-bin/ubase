@@ -7,7 +7,7 @@ MANPREFIX = $(PREFIX)/share/man
 
 # tools
 CC = musl-gcc
-AR = ar
+#AR = ar
 LD = $(CC)
 CPPFLAGS = -D_FILE_OFFSET_BITS=64 -D_XOPEN_SOURCE=700 -D_GNU_SOURCE
 RANLIB = ranlib
